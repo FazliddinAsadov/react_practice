@@ -1,0 +1,51 @@
+.contact_page{
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+}
+
+.contact_page .container{
+        width: 60%;
+        margin: 0 auto;
+}
+
+.contact_page  h1{
+        text-align: center;
+        padding: 20px;
+}
+
+form{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+}
+
+label{
+        padding: 5px  0;
+}
+input {
+        padding: 5px 0;
+}
+
+textarea{
+        margin-top: 10px;
+}
+.formBtn{
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 20px;
+        background-color: rgba(59, 16, 145, 0.985);
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+}
+.formBtn:active{
+        font-size: 14px;
+}

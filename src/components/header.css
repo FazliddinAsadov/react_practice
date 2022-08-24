@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+@media only screen and (max-width: 550px) {
+  .header{
+    max-width: 550px;
+    height: 100vh;
+    background-image: url("../images/bg.avif");
+    overflow: scroll
+  }
+  .header .container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .iconc__group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .search , .korzina{
+    width: 20px;
+    height: 20px;
+  }
+  .title{
+    margin-top: 10%;
+    font-size: 16px;
+  }
+
+  .categories{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .flex h2{
+    font-size: 18px;
+  }
+    .cart__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    margin-top: 5%;
+
+    }
+  .cart{
+    width: 60px;
+    height: 80px;
+    background-color:rgb(245, 242, 239);
+    border-radius: 8px;
+   
+  }
+  .cart:hover{
+    border: 2px solid orange;
+  }
+  .cart__item img{
+    width: 60px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .result h2 {
+    font-size: 18px
+  }
+
+ .price__cart{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .cartBox{
+        width: 160px;
+        height: 220px;
+        background-color:rgb(245, 242, 239); 
+    }
+    .cartBox img{
+        width: 160px;
+    }
+    .center{
+        width: 90%;
+        margin:  0  auto;
+        padding-top: 15px;
+
+    }
+    .iconc_korzin{
+        width: 25px;
+    }
+    
+
+    .flex_price{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+  }
+
