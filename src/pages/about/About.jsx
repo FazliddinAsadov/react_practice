@@ -1,6 +1,7 @@
 import React from 'react'
 import "./about.css"
-import img from "../../images/Без названия.jfif"
+import img from "../../images/about.avif"
+
 
 export default function 
 () {

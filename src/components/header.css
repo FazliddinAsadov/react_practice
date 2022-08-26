@@ -2,7 +2,175 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
+} 
+.header{
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../images/bg.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
 }
+.header .container{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo h3{
+  font-size: 24px;
+}
+.iconc__group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  cursor: pointer;
+}
+.search , .korzina{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.search:active , .korzina:active {
+  color: blue;
+  width: 25px;
+}
+
+.title{
+  width: 60%;
+  margin-top: 5%;
+  font-size: 24px;
+}
+
+.categories{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.flex h2{
+  font-size: 24px;
+}
+
+.header  .cart__item ,  .line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  
+ }
+.cart{
+  width: 220px;
+  height:220px;
+  background-color:rgb(245, 242, 239);
+  border-radius: 8px;
+ 
+}
+.cart:hover{
+  border: 2px solid orange;
+}
+.cart__item img{
+  width: 100%;
+  height:70%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.result h2 {
+  margin-top: 8%;
+  font-size: 24px
+}
+
+.header .flex__price{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+ 
+
+}
+ .header .price__cart{
+      margin-top: 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5px;
+      
+  }
+  .header .cartBox{
+      width: 220px;
+      height: 270px;
+      background-color:rgb(245, 242, 239); 
+      margin: 20px 0;
+
+    
+  }
+  .cartBox img{
+      width: 100%;
+      height: 70%
+
+  }
+  .center{
+      width: 90%;
+      margin:  0  auto;
+      padding-top: 10px;
+      color: #000;
+      text-decoration: none;
+
+  }
+  .iconc_korzin{
+      width:45px;
+      padding:0  10px;
+     background-color: #000;
+     color: #fff;
+     border-radius: 5px 15px 5px 15px;
+     cursor: pointer;
+     
+   
+  }
+  .iconc_korzin:active{
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  .flex_price{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+  }
 @media only screen and (max-width: 550px) {
   .header{
     max-width: 550px;
@@ -36,6 +204,7 @@
     height: 20px;
   }
   .title{
+    width: 90%;
     margin-top: 10%;
     font-size: 16px;
   }
@@ -72,7 +241,7 @@
     }
   .cart{
     width: 60px;
-    height: 80px;
+    height: 85px;
     background-color:rgb(245, 242, 239);
     border-radius: 8px;
    
@@ -82,8 +251,10 @@
   }
   .cart__item img{
     width: 60px;
+    height: 60%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    font-weight: 700;
   }
 
   .result h2 {
@@ -97,15 +268,17 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 20px;
+         gap: 10px;
     }
     .cartBox{
         width: 160px;
         height: 220px;
         background-color:rgb(245, 242, 239); 
+        margin: 20px 0;
     }
     .cartBox img{
-        width: 160px;
+        width: 100%;
+        height: 60%;
     }
     .center{
         width: 90%;
@@ -114,7 +287,9 @@
 
     }
     .iconc_korzin{
-        width: 25px;
+        width: 45px;
+        background-color: aliceblue;
+        color: #000;
     }
     
 
