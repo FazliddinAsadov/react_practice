@@ -5,7 +5,8 @@ import About from "./pages/about/About";
 import User from "./pages/user/User";
 import Contact from "./pages/contact/Contact";
 import Info from "./pages/info/Info";
-import "./app.css"
+import "./app.css";
+
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
      
      <Footer />
+    
      <Routes>
        <Route path="/" element={<Header />} />
        <Route path="about" element={<About />} />
